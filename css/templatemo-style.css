@@ -243,8 +243,7 @@ button:focus { outline: none; }
     color: #4EA7FF;
 }
 
-.tm-light-blue-bordered-btn:hover,
-.tm-light-blue-bordered-btn:focus {
+.tm-light-blue-bordered-btn:hover {
     background: #4EA7FF;
     color: white;
 }
