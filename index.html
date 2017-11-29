@@ -23,14 +23,14 @@
 </head>
 
     <body ng-controller="ctrl" id="top" class="home">
-	
 
-	
+
+
         <div class="container-fluid">
             <div class="row">
-              
+
                 <div class="tm-navbar-container">
-                
+
                 <!-- BARRA CABECERA  -->
                 <nav class="navbar navbar-full navbar-fixed-top">
 					<!-- BOTON MENU VERSION MOVIL -->
@@ -38,7 +38,7 @@
                         &#9776;
                     </button>
                     <!-- FIN BOTON MENU VERSION MOVIL -->
-                    <div class="collapse navbar-toggleable-sm" id="tmNavbar">                            
+                    <div class="collapse navbar-toggleable-sm" id="tmNavbar">
 
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
@@ -59,14 +59,14 @@
 							<li class="nav-item">
                                 <a class="nav-link raise" href="#tm-section-6">Contacto</a>
                             </li>
-						</ul>					
-							<a href="index2.html"> <img alt="Brexit Language" src="img/EN_LANG.png" title="Brexit Language" width="40" height="40">
+						</ul>
+							<a href="index2.html"> <img alt="Brexit Language" src="img/EN_LANG.png" title="Brexit Language" width="40" height="40" style="margin-top: 10px;"></a>
 					</div>
-                  
+
                 </nav>
 				 <!-- FIN BARRA CABECERA  -->
 
-              </div>  
+              </div>
 
            </div>
 
@@ -74,68 +74,68 @@
            <div class="row">
                 <div class="tm-intro">
 
-                    <section id="tm-section-1">                        
+                    <section id="tm-section-1">
                         <div class="tm-container text-xs-center tm-section-1-inner">
-						
+
                             <h1 class="tm-site-name"></h1>
                             <p class="tm-intro-text">Por si aún no te has enterado... </p>
-                            <a href="#tm-section-2" class="tm-intro-link">¡Nos casamos!</a>  
+                            <a href="#tm-section-2" class="tm-intro-link">¡Nos casamos!</a>
 								<div class="tm-container text-xs-center">
-								
 
-							</div>											
+
+							</div>
                         </div>
-						
+
                    </section>
                 </div>
             </div>
-			
+
 			<!-- FIN TEXTO IMAGEN CABECERA Y BOTON  -->
-								
-			
+
+
 			<!-- INFORMACION  -->
             <div class="row gray-bg">
-                
+
                 <div id="tm-section-2" class="tm-section">
-				
+
                     <div class="tm-container tm-container-wide">
-					
-					
+
+
 					<!-- CUANDO DONDE -->
                         <div class="tm-news-item">
-                            
+
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-news-item-img-container">
-                                <img src="img/tm-600x300-01.jpg" alt="Image" class="img-fluid tm-news-item-img">  
+                                <img src="img/tm-600x300-01.jpg" alt="Image" class="img-fluid tm-news-item-img">
                             </div>
-                            
+
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-news-container">
                                 <h2 class="tm-news-title dark-gray-text">¿Cuándo? ¿Dónde?</h2>
                                 <p class="tm-news-text"><a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NGFqZTl1NGVqdDJsMHNvb3F2anVjaGJxYmMgYXNpLmJhcnJpb0Bt&amp;tmsrc=asi.barrio%40gmail.com">8 de Septiembre de 2018</a><BR><a href="http://www.asadorhormaondo.com/hormaondo/web/index.php" target="_blank">Horma Ondo</a><BR></p>
                             </div>
-							
+
                         </div>
-						
+
 						<!-- FIN CUANDO DONDE -->
-						
+
 						<!-- HORA -->
 
                         <div class="tm-news-item">
 
                             <div class="col-xs-12 col-sm-12 col-md-12 container col-lg-6 col-xl-6 flex-order-2 tm-news-item-img-container">
                                 <img src="img/tm-600x300-02.jpg" alt="Image" class="img-fluid tm-news-item-img image">
-								
+
                             </div>
 
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-news-container flex-order-1">
                                 <h2 class="tm-news-title dark-gray-text">¿Qué?</h2>
                                 <p class="tm-news-text"><a target="_blank" href=https://es.wikihow.com/ser-puntual>13.00: Llegada de invitados</a><br>13.30: Ceremonia<BR>14.00: Cóctel <BR>15.00: Comida <br> 18.00 Empieza la fiesta!</p>
-                                
+
                             </div>
 
                         </div>
-						
+
 						<!-- FIN HORA -->
-						
+
 						<!-- COMO -->
 
                         <div class="tm-news-item">
@@ -147,7 +147,7 @@
 								<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 								<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 								<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
-  
+
 								<script>
 									angular.module('app', [])
 									.controller('ctrl', ['$scope', function($scope){
@@ -157,13 +157,13 @@
 									};
 									var map = new google.maps.Map(document.getElementById("MapaGoogle"), mapProp);
 									$scope.container = false;
-      
+
 									$scope.toggle = function(){
 										$scope.container = !$scope.container;
 										if($scope.container) google.maps.event.trigger(map, 'resize');
 									};
 									}]);
-    
+
 								</script>
 
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-news-container">
@@ -174,11 +174,11 @@
 								<button class="btn tm-light-blue-bordered-btn tm-news-link" type="button" ng-click="toggle()">Mostrar Mapa</button>
 							</div>
                         </div>
-						
+
 						<!-- FIN COMO -->
-						
+
 						<!-- ROPA -->
-						
+
 						 <div class="tm-news-item">
 
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 flex-order-2 tm-news-item-img-container">
@@ -189,8 +189,8 @@
                                 <h2 class="tm-news-title dark-gray-text">¿Qué me pongo?</h2>
                                 <p class="tm-news-text">¡Saca tu versión más Indie-Rockera! También aceptamos etiqueta Semi-Formal:
 								<BR>
-								
-								
+
+
 								<!-- MODAL -->
 								<!-- Trigger/Open The Modal -->
 									<a id="myImg" alt="Indie" width="300" height="200">¡Sí!</a>
@@ -201,42 +201,47 @@
 										<!-- Modal content -->
 										<div class="modal-content">
 										<img src="img/Ropa_1.jpg" alt="Indie" class="img-fluid tm-gallery-img">
-  
+
 										<!-- The Close Button -->
-										<span class="close">&times;</span>
+										<span class="close" id="close_modal">&times;</span>
 										</div>
-									</div> 
+									</div>
+                  <script>
+                    document.getElementById("myModal").onclick = function(e) {
+                      document.getElementById("close_modal").onclick();
+                    }
+                  </script>
 								<!-- MODAL -->
-																							
-					
-								
+
+
+
 								<BR>Tal vez...
-								
-								
-								
+
+
+
 								<BR>¡NO!</p>
-                                
-								
-								
+
+
+
 							</div>
 
                         </div>
 
 						<!-- FIN ROPA -->
-						
-                    </div>                    
+
+                    </div>
                </div>
 
-           </div> 
+           </div>
 		   <!-- FIN INFORMACION  -->
-		   
+
 		   <!-- SOBRE NOSOTROS  -->
 
             <div class="row">
 
                 <section id="tm-section-3" class="tm-section">
                     <div class="tm-container text-xs-center">
-                        
+
                         <h2 class="blue-text tm-title">Sobre nosotros...</h2>
 						<div class="fotos_bebes">
 								<div class="container1">
@@ -254,7 +259,7 @@
 						</div>
 
                         <p class="margin-b-5">Y aquí una prueba de que nos conocemos:</p>
-                       
+
                         <div class="tm-img-grid">
                             <div class="tm-gallery-img-container">
                                 <a href="img/img_1.jpg" class="tm-gallery-img-link">
@@ -263,13 +268,13 @@
                             </div>
                             <div class="tm-gallery-img-container">
                                 <a href="img/img_2.jpg" class="tm-gallery-img-link">
-                                    <img src="img/img_2.jpg" alt="Image" class="img-fluid tm-gallery-img">  
+                                    <img src="img/img_2.jpg" alt="Image" class="img-fluid tm-gallery-img">
                                 </a>
                             </div>
                             <div class="tm-gallery-img-container">
                                 <a href="img/img_3.jpg" class="tm-gallery-img-link">
                                     <img src="img/img_3.jpg" alt="Image" class="img-fluid tm-gallery-img">
-                                </a>                           
+                                </a>
                             </div>
                             <div class="tm-gallery-img-container">
                                 <a href="img/img_4.jpg" class="tm-gallery-img-link">
@@ -321,64 +326,64 @@
                 </section>
 
             </div>
-			
+
 			<!-- FIN SOBRE NOSOTROS  -->
-			
+
 						<!-- LISTA BODA -->
-				
+
 			<div class="row gray-bg">
 
                 <section id="tm-section-4" class="tm-section">
                     <div class="tm-container text-xs-center">
-                        
+
                         <h2 class="blue-text tm-title">Afloja la Panoja</h2>
                         <p class="margin-b-5">Sí, lo único que queremos de ti es el dinero, asi que apoquina.</p>
                         <div class="tm-news-item">
-                            
+
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-news-item-img-container">
-                                <img src="img/tm-600x300-01.jpg" alt="Image" class="img-fluid tm-news-item-img">  
+                                <img src="img/tm-600x300-01.jpg" alt="Image" class="img-fluid tm-news-item-img">
                             </div>
-                            
+
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-news-container">
                                 <h2 class="tm-news-title dark-gray-text">Danos Dinero</h2>
                                 <p class="tm-news-text"><a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NGFqZTl1NGVqdDJsMHNvb3F2anVjaGJxYmMgYXNpLmJhcnJpb0Bt&amp;tmsrc=asi.barrio%40gmail.com">8 de Septiembre de 2018</a><BR><a href="http://www.asadorhormaondo.com/hormaondo/web/index.php" target="_blank">Horma Ondo</a><BR></p>
                             </div>
-							
+
                         </div>
-						
+
 						<!-- FIN CUANDO DONDE -->
-						
+
 						<!-- HORA -->
 
                         <div class="tm-news-item">
 
                             <div class="col-xs-12 col-sm-12 col-md-12 container col-lg-6 col-xl-6 flex-order-2 tm-news-item-img-container">
                                 <img src="img/tm-600x300-02.jpg" alt="Image" class="img-fluid tm-news-item-img image">
-								
+
                             </div>
 
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-news-container flex-order-1">
                                 <h2 class="tm-news-title dark-gray-text">Utiliza esto para darnoslo</h2>
                                 <p class="tm-news-text"><a target="_blank" href=https://es.wikihow.com/ser-puntual>13.00: Llegada de invitados</a><br>13.30: Ceremonia<BR>14.00: Cóctel <BR>15.00: Comida <br> 18.00 Empieza la fiesta!</p>
-                                
+
                             </div>
 
                         </div>
-                     
+
                     </div>
                 </section>
 
-            </div>      
+            </div>
 
-			<!-- FIN LISTA BODA -->		
-			
+			<!-- FIN LISTA BODA -->
+
 			<!-- AYUDANOS -->
-			
+
 			 <div class="row">
 
                 <section id="tm-section-5" class="tm-section">
                     <div class="tm-container text-xs-center">
-                        
+
                         <h2 class="blue-text tm-title">Ayúdanos</h2>
 						<figure class="snip1543">
 							<img src="img/headphones.jpg" alt="sample108" />
@@ -400,9 +405,9 @@
 					</div>
 				</section>
 			</div>
-			
+
 			<!-- FIN AYUDANOS -->
-			
+
 			<!-- CONTACTO  -->
 
             <div class="row gray-bg">
@@ -411,9 +416,9 @@
                     <div class="tm-container">
 
                         <h2 class="blue-text tm-title text-xs-center">Contacto</h2>
-                      
+
                         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                            <form action="index.html" method="post" class="tm-contact-form">                                
+                            <form action="index.html" method="post" class="tm-contact-form">
                                 <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 tm-form-group-left">
                                     <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Nombre"  required/>
                                 </div>
@@ -426,11 +431,11 @@
                                 <div class="form-group">
                                     <textarea id="contact_message" name="contact_message" class="form-control" rows="6" placeholder="Mensaje" required></textarea>
                                 </div>
-                            
-                                <button type="submit" class="btn tm-light-blue-bordered-btn pull-xs-right">Enviar</button>                          
-                            </form>   
+
+                                <button type="submit" class="btn tm-light-blue-bordered-btn pull-xs-right">Enviar</button>
+                            </form>
                         </div> <!-- col -->
-                        
+
                         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 margin-top-xs-50">
                             <h3 class="light-blue-text tm-subtitle">Ponte en contacto...</h3>
                             <p>Si tienes dudas, preguntas, quieres confirmar tu asistencia o tan solo quieres decir hola, no lo dudes y ponte en contacto!</p>
@@ -442,14 +447,14 @@
                     </div>
 				</section>
 			</div>
-			
-			<!-- FIN CONTACTO -->	
-			            
+
+			<!-- FIN CONTACTO -->
+
 
                 <!-- FOOTER -->
-                <footer class="tm-footer">                
+                <footer class="tm-footer">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <p class="text-xs-center tm-footer-text">¡Gracias por la visita!</p> 
+                        <p class="text-xs-center tm-footer-text">¡Gracias por la visita!</p>
 	<div class="text-xs-center">
 		<p id="reloj"></p>
 
@@ -458,7 +463,7 @@
 
 
 			var countDownDate = new Date("Sep 8, 2018").getTime();
-			var x = setInterval(function() 
+			var x = setInterval(function()
 			{
 			var now = new Date().getTime();
 			var distance = countDownDate - now;
@@ -474,32 +479,32 @@
 				}
 			}, 1000);
 		</script>
-	</div>						
-                    </div>    
+	</div>
+                    </div>
 						<!--RELOJ-->
 
     <!--FIN RELOJ-->
 
-                </footer>  
+                </footer>
 				<!-- FIN FOOTER -->
 
-            
-           
+
+
         </div> <!-- container-fluid -->
-        
+
         <!-- JAVA SCRIPTS -->
-        
+
         <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
-        <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> <!-- Tether for Bootstrap, http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h --> 
+        <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> <!-- Tether for Bootstrap, http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h -->
         <script src="js/bootstrap.min.js"></script>                 <!-- Bootstrap (http://v4-alpha.getbootstrap.com/) -->
         <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
         <script src="js/jquery.magnific-popup.min.js"></script>     <!-- Magnific pop-up (http://dimsemenov.com/plugins/magnific-popup/) -->
 
 		<!-- FIN JAVA SCRIPTS -->
-        
+
         <!-- SCRIPT CABECERA -->
-        <script>     
-       
+        <script>
+
             $(document).ready(function(){
 
                 var mobileTopOffset = 54;
@@ -509,21 +514,21 @@
                 if($(window).width() <= 767) {
                     topOffset = mobileTopOffset;
                 }
-                
+
                 /* Single page nav
                 -----------------------------------------*/
                 $('#tmNavbar').singlePageNav({
                    'currentClass' : "active",
                     offset : topOffset,
                     'filter': ':not(.external)'
-                }); 
+                });
 
                 /* Handle nav offset upon window resize
                 -----------------------------------------*/
                 $(window).resize(function(){
                     if($(window).width() <= 767) {
                         topOffset = mobileTopOffset;
-                    } 
+                    }
                     else {
                         topOffset = desktopTopOffset;
                     }
@@ -534,9 +539,9 @@
                         'filter': ':not(.external)'
                     });
                 });
-                
 
-                /* Collapse menu after click 
+
+                /* Collapse menu after click
                 -----------------------------------------*/
                 $('#tmNavbar a').click(function(){
                     $('#tmNavbar').collapse('hide');
@@ -554,7 +559,7 @@
                 }
 
                 $(window).scroll(function(){
-                   
+
                     if($(this).scrollTop() >= target) {
                         $(".tm-navbar-container").addClass("bg-inverse");
                     }
@@ -568,35 +573,35 @@
                  * https://css-tricks.com/snippets/jquery/smooth-scrolling/
                 --------------------------------------------------------------*/
                 $('a[href*="#"]:not([href="#"])').click(function() {
-                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
                         && location.hostname == this.hostname) {
-                        
+
                         var target = $(this.hash);
                         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                        
+
                         if (target.length) {
-                            
+
                             $('html, body').animate({
                                 scrollTop: target.offset().top - topOffset
                             }, 1000);
                             return false;
                         }
                     }
-                }); 
+                });
 
-              
+
                 /* Magnific pop up
                 ------------------------- */
                 $('.tm-img-grid').magnificPopup({
                     delegate: 'a', // child items selector, by clicking on it popup will open
                     type: 'image',
-                    gallery: {enabled:true}            
-                });            
+                    gallery: {enabled:true}
+                });
             });
 
-        </script>                   
+        </script>
 
-		<!-- FIN SCRIPT CABECERA -->		
+		<!-- FIN SCRIPT CABECERA -->
 
 </body>
 </html>
