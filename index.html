@@ -60,7 +60,7 @@
                                 <a class="nav-link raise" href="#tm-section-6">Contacto</a>
                             </li>
 						</ul>
-							<a href="index2.html"> <img alt="Brexit Language" src="img/EN_LANG.png" title="Brexit Language" width="40" height="40" style="margin-top: 10px;"></a>
+							<a id="language-icon" href="index2.html"> <img alt="Brexit Language" src="img/EN_LANG.png" title="Brexit Language" width="40" height="40" style="margin-top: 10px;"></a>
 					</div>
 
                 </nav>
@@ -506,6 +506,8 @@
         <script>
 
             $(document).ready(function(){
+
+              document.getElementById("language-icon").onclick = function(e) { window.location.href = "index2.html"; }
 
                 var mobileTopOffset = 54;
                 var desktopTopOffset = 80;
