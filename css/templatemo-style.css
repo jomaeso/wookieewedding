@@ -678,15 +678,16 @@ body.page-2 { padding-top: 80px; }
 }
 
 .overlay1 {
-  position: absolute;
+position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 50;
+  right: -100%;
   background-color: #008CBA;
   overflow: hidden;
   width: 0;
   height: 100%;
   transition: .5s ease;
+  z-index: 1
 }
 
 .container1:hover .overlay1 {
@@ -717,10 +718,10 @@ body.page-2 { padding-top: 80px; }
 }
 
 .overlay2 {
-  position: absolute;
+ position: absolute;
   bottom: 0;
-  left: 100%;
-  right: 0;
+  left: -100%;
+  right: 50;
   background-color: #008CBA;
   overflow: hidden;
   width: 0;
@@ -730,7 +731,7 @@ body.page-2 { padding-top: 80px; }
 
 .container2:hover .overlay2 {
   width: 100%;
-  left: 0;
+  left: -100;
 }
 
 .text2 {
