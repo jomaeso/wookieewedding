@@ -921,7 +921,7 @@ position: absolute;
 
 /* FIN SLATES AYUDA */
 
-.tm-gallery-img-link {
+.img-fluid {
   opacity: 1;
   display: block;
   width: 100%;
@@ -930,27 +930,27 @@ position: absolute;
   backface-visibility: hidden;
 }
 
-.middle {
+.middle{
   transition: .5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
+	z-index: 999;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
 }
 
-.tm-gallery-img-container:hover .tm-gallery-img-link {
+.tm-gallery-img-container:hover .tm-gallery-img {
   opacity: 0.3;
 }
 
-.tm-gallery-img-container:hover .tm-gallery-img-link {
+.tm-gallery-img-container:hover .middle {
   opacity: 1;
 }
 
 .text {
-  background-color: #4CAF50;
-  color: white;
+  color: black;
   font-size: 16px;
   padding: 16px 32px;
 }
