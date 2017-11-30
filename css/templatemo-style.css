@@ -921,6 +921,10 @@ position: absolute;
 
 /* FIN SLATES AYUDA */
 
+.tm-gallery-img-container {
+	position: relative;
+}
+
 .img-fluid {
   opacity: 1;
   display: block;
