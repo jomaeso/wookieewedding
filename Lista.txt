@@ -1,0 +1,19 @@
+9- Por algun motivo cuando pinchas en la fecha deberia salir un evento por defecto para el 8 de Septiembre, pero sale uno en blanco,
+seguire investigando...
+
+13- Mostrar mapa cambiar el formato en la version movil (vertical solo).
+
+14- El formulario no funciona y no envia emails! Y con no funciona me refiero a que nunca fue configurado...
+
+15- Estaria bien que las imagenes debajo de "Y aquí una prueba de que nos conocemos:" tuvieran texto cuando pasas el raton por encima
+rollo esto: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity (pero si en cuadro verde)
+
+16-Con el script de difuminar la imagen de la cebecera al hacer scroll hacia abajo la imagen a veces hace cosas raras, como que se mueve. But why tho?
+Hay alguna manera de fijarla mas? U otra manera de difuminar tal vez?
+
+17- Necesito una herramienta magica que me diga que parte del codigo (especialmente del CSS) no se esta usando para poder borrar y limpiar, existe algo asi?
+
+18- En "Que me pongo" busque por ahi una manera de hacer que saliera una imagen como del centro con ese efecto de hacerse mas grande.
+De alguna manera consegui cambiar el codigo para que saliera del texto, que es lo que queria.
+Cuando intente duplicarlo para hacerlo con mas imagenes todo se rompia y no conseguia hacer que funcionase,
+aun no se por que
