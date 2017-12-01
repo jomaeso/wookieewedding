@@ -11,26 +11,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400">   <!-- Google Font "Open Sans" -->
     <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">                <!-- Awesome Font-->
     <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
-	<link rel="stylesheet" href="css/magnific-popup.css">                                 	  <!-- Magnific pop up style -->
+	  <link rel="stylesheet" href="css/magnific-popup.css">                                 	  <!-- Magnific pop up style -->
     <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-          <![endif]-->
 </head>
 
     <body ng-controller="ctrl" id="top" class="home">
-
-
-
         <div class="container-fluid">
             <div class="row">
-
                 <div class="tm-navbar-container">
-
                 <!-- BARRA CABECERA  -->
                 <nav class="navbar navbar-full navbar-fixed-top">
 					<!-- BOTON MENU VERSION MOVIL -->
@@ -210,32 +199,38 @@
 
 
 
-								<BR><a onclick="$('#talvezmodal').modal('show');;">Tal vez...</a>
+								<BR><a href="" onclick="$('#talvezmodal').modal('show'); return false;">Tal vez...</a>
                 <div class="modal fade" id="talvezmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog" role="document">
-                    <img src="img/headphones.jpg">
+                    <img src="img/headphones.jpg" style="width: 100%;">
                     <span class="close" id="talvezmodalclose">&times;</span>
                   </div>
                 </div>
 
 
-								<BR><a onclick="$('#nomodal');">¡NO!</a></p>
+								<BR><a href="" onclick="$('#nomodal').modal('show'); return false;">¡NO!</a></p>
                   <div class="modal fade" id="nomodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
-                      <img src="img/camara.jpeg">
+                      <img src="img/camara.jpeg" style="width: 100%;">
                       <span class="close" id="nomodalclose">&times;</span>
                     </div>
                   </div>
 
 
                   <script>
-                  document.getElementById("#talvezmodalclose").onclick = function(e) {
+                  document.getElementById("talvezmodalclose").onclick = function(e) {
                     $('#talvezmodal').modal('hide');
                   }
-                  document.getElementById("#nomodalclose").onclick = function(e) {
+                  document.getElementById("nomodalclose").onclick = function(e) {
                     $('#nomodal').modal('hide');
                   }
-                    document.getElementById("#myModal").onclick = function(e) {
+                  document.getElementById("talvezmodal").onclick = function(e) {
+                    $('#talvezmodal').modal('hide');
+                  }
+                  document.getElementById("nomodal").onclick = function(e) {
+                    $('#nomodal').modal('hide');
+                  }
+                    document.getElementById("myModal").onclick = function(e) {
                       document.getElementById("close_modal").onclick();
                     }
                   </script>
