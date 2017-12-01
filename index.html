@@ -206,22 +206,39 @@
 										<span class="close" id="close_modal">&times;</span>
 										</div>
 									</div>
-                  <script>
-                    document.getElementById("myModal").onclick = function(e) {
-                      document.getElementById("close_modal").onclick();
-                    }
-                  </script>
 								<!-- MODAL -->
 
 
 
-								<BR>Tal vez...
+								<BR><a onclick="$('#talvezmodal').modal('show');;">Tal vez...</a>
+                <div class="modal fade" id="talvezmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <img src="img/headphones.jpg">
+                    <span class="close" id="talvezmodalclose">&times;</span>
+                  </div>
+                </div>
 
 
+								<BR><a onclick="$('#nomodal');">¡NO!</a></p>
+                  <div class="modal fade" id="nomodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <img src="img/camara.jpeg">
+                      <span class="close" id="nomodalclose">&times;</span>
+                    </div>
+                  </div>
 
-								<BR>¡NO!</p>
 
-
+                  <script>
+                  document.getElementById("#talvezmodalclose").onclick = function(e) {
+                    $('#talvezmodal').modal('hide');
+                  }
+                  document.getElementById("#nomodalclose").onclick = function(e) {
+                    $('#nomodal').modal('hide');
+                  }
+                    document.getElementById("#myModal").onclick = function(e) {
+                      document.getElementById("close_modal").onclick();
+                    }
+                  </script>
 
 							</div>
 
