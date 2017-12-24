@@ -148,19 +148,19 @@ button:focus { outline: none; }
 
 /*BOTON CENTRO*/
 .tm-intro-link {
-	border: 2px solid black;
+	border: 3px solid #4EA7FF;
 	border-radius: 50px;
-	color: black;
+	color: #4EA7FF;
 	display: inline-block;
-    padding: 15px 35px;
+    padding: 15px 60px;
 	background-color: white;
 }
 /*BOTON CENTRO MOUSEOVER*/
 .tm-intro-link:hover,
 .tm-intro-link:focus {
 	color: white;
-	background-color: black;
-	border: 2px solid white;
+	background-color: #4EA7FF;
+	border: 3px solid #4EA7FF;
 }
 
 .navbar-nav .nav-link,
@@ -766,7 +766,7 @@ position: absolute;
   color: #ffffff;
   display: inline-block;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   margin: 10px 5px;
   max-width: 500px;
   min-width: 365px;
@@ -919,6 +919,10 @@ position: absolute;
   transform: skew(-30deg) translateX(-30%);
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
+}
+
+.textoayudanos {
+	color: #dbdbdb;
 }
 
 /* FIN SLATES AYUDA */
